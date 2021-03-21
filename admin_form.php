@@ -24,7 +24,7 @@
             <p><label for="">季節<span class="required">必須</span><br><input type="text" name="season" required placeholder="春" /></label></p>
             <p><label for="">分類<span class="required">必須</span><br><input type="radio" name="category" value="一年草" required />一年草</label>
             　<input type="radio" name="category" value="多年草" required />多年草</p>
-            <p><label for="">コメント<span class="required">必須</span><br><textarea name="comment" rows="10" cols="50"></textarea></label></p>
+            <p><label for="">説明<span class="required">必須</span><br><textarea name="comment" rows="10" cols="50" placeholder="ここに説明を入力"></textarea></label></p>
             <p><label for="">画像名<span class="required">必須</span><br><input type="text" name="image" required placeholder="image001.jpg"/></label></p>
 
         </div>
