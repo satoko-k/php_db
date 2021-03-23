@@ -1,0 +1,43 @@
+body {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.plantImg {
+  width: 300px;
+  height: 300px;
+  display: block;
+}
+
+figure.hover-parent {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+figcaption.hover-mask {
+  width: 280px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+figure.hover-parent:hover .hover-mask {
+  opacity: 1;
+  transition: all 0.6s ease;
+  padding-top: 0;
+}
+
+.weeds {
+  display: flex;
+}

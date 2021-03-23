@@ -6,6 +6,19 @@ main {
   justify-content: center;
 }
 
+.wrapper {
+  display: flex;
+}
+.imgArea {
+  padding: 30px;
+}
+.formArea {
+  padding: 30px;
+}
+.formArea h2 {
+  text-align: center;
+}
+
 .form {
   padding: 20px;
   background-color: rgb(235, 235, 235);
@@ -41,7 +54,7 @@ header {
 
 .form-Btn {
   border-radius: 6px;
-  margin-top: 32px;
+  margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
