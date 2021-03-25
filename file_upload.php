@@ -77,7 +77,7 @@ echo $id;
                 $error=$stmt->errorInfo();
                 exit("QueryError:".$error[2]);
             }else{
-                //select.phpへリダイレクト
+                //top.phpへリダイレクト
                 header("Location: top.php");
                 exit;
 
