@@ -25,7 +25,7 @@ $image = $_POST["image"];
 // ２:DBに接続する（エラー処理の追加）
 
     try {
-        $pdo = new PDO('mysql:dbname=camp_testdb; charset=utf8; host=localhost','root','');
+        $pdo = new PDO('mysql:dbname=camp_plantdb; charset=utf8; host=localhost','root','');
     }catch(PDOException $e){
         exit('DbConnectError:'.$e->getMessage());
     }
@@ -60,7 +60,7 @@ $image = $_POST["image"];
         exit("QueryError:".$error[2]);
     }else{
         //5:index.phpへリダイレクト
-        header("Location: index.php"); //Location: この後半角スペースを必ず入れる
+        header("Location: admin_form.php"); //Location: この後半角スペースを必ず入れる
         exit;
     }
 ?>

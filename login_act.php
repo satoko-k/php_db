@@ -38,8 +38,9 @@
         $_SESSION["chk_ssid"] = session_id();
         $_SESSION["u_name"] = $val['u_name'];
         $_SESSION["rank_flg"] = $val['rank_flg'];
+        $_SESSION["id"] = $val['id'];
         // ログイン処理OKの場合\.phpへ遷移
-        header("Location: index.php");
+        header("Location: top.php");
     }else{
         // ログイン処理NGの場合はlogin.phpへ遷移
         header("Location: membership.php");
