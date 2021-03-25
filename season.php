@@ -16,13 +16,8 @@ $selectcategory ='';
 $selectcategory = $_POST["category"];
 // echo $selectcategory;
 
-// 1:DBに接続する（エラー処理の追加）　insert.phpと同じ
-
-try {
-    $pdo = new PDO('mysql:dbname=camp_plantdb; charset=utf8; host=localhost','root','');
-}catch (PDOException $e){
-    exit('DbConnectError:'.$e->getMessage());
-}
+// 1:DBに接続する（エラー処理の追加）
+$pdo = db_connect();
 
 
 //2：データ登録のSQL作成[選択]
