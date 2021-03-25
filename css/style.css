@@ -1,43 +1,112 @@
-body {
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.profile img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+h3 {
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+.plantBox > p {
+  padding-left: 15px;
+  margin: 0;
+}
+
+/* パンくず */
+.cp_breadcrumb *,
+.cp_breadcrumb *:after,
+.cp_breadcrumb *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.cp_breadcrumb {
+  margin: 1em 1em;
+  padding: 1em 2em;
+  background-color: #49a358;
+  color: #fff;
+  border-radius: 0.5em;
+}
+
+ul.breadcrumbs {
   width: 980px;
   margin: 0 auto;
 }
 
-.plantImg {
-  width: 300px;
-  height: 300px;
-  display: block;
+.cp_breadcrumb a {
+  text-decoration: none;
+  color: #93e0c7;
 }
-
-figure.hover-parent {
-  width: 300px;
-  height: 300px;
+.cp_breadcrumb .breadcrumbs {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cp_breadcrumb li {
+  display: inline-block;
   position: relative;
-  margin-bottom: 30px;
-  overflow: hidden;
+  padding-right: calc(16px + 8px);
+  margin-right: 8px;
+  color: #93e0c7;
 }
-figcaption.hover-mask {
-  width: 280px;
-  height: 300px;
+.cp_breadcrumb li::before {
+  content: "›";
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-align: center;
+  font-size: 1em;
+  color: inherit;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+li.lastList {
+  margin-right: 0;
+  padding-right: 0;
+  color: #ffffff;
+}
+.cp_breadcrumb li:last-child::before {
+  content: normal;
+}
+.content {
+  background-color: honeydew;
+  padding: 30px;
+  margin: 1em auto;
+  text-align: center;
+}
+/* カテゴリー　図鑑のボタン部分 */
+.categoryZukan {
+  background-color: greenyellow;
+  padding: 20px;
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 10px;
+  border-bottom: 5px solid #78a336;
+}
+.categoryZukan a {
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-}
-figure.hover-parent:hover .hover-mask {
-  opacity: 1;
-  transition: all 0.6s ease;
-  padding-top: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.weeds {
-  display: flex;
+.categoryZukan a:hover {
+  /* マウスオーバー時に色変更*/
+  opacity: 0.3;
+  background-color: #ffffff;
+  border-bottom: 2px solid #78a336;
 }

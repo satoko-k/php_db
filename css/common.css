@@ -1,0 +1,42 @@
+.header {
+  max-width: 980px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-image: url("../img/headerimg.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.log {
+  background-color: #84c08e;
+  margin: 1em 1em;
+  border-radius: 0.5em;
+}
+
+p.loginPlace {
+  max-width: 980px;
+  text-align: right;
+  margin: 0 auto;
+}
+
+.btn_logout {
+  padding: 0 10px;
+}
+
+h1 {
+  vertical-align: middle;
+  display: inline-flex;
+  margin-bottom: 0;
+}
+
+footer {
+  background-image: url("../img/footerimg2.jpg");
+  height: 150px;
+  width: auto;
+  background-size: contain;
+  margin-top: 10px auto 0;
+  background-position: center;
+  margin-top: 50px;
+}

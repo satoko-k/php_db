@@ -128,12 +128,20 @@ li.lastList {
 
 /* 検索部分 */
 .search {
-  padding: 10px 30px;
+  padding: 0 30px;
   background-color: hsla(204, 6%, 85%, 0.664);
   border-radius: 8px;
   width: 850px;
   margin: 0 auto 20px;
   text-align: center;
+}
+.search p {
+  padding: 0 20px;
+}
+.searchArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .radio_input {
   clip: rect(1px, 1px, 1px, 1px);
@@ -167,10 +175,14 @@ li.lastList {
 }
 .form-Btn {
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
+}
+.form-Btn:hover {
+  background-color: rgba(122, 122, 122, 0.6);
 }
 
 /* ページトップへの部分 */
